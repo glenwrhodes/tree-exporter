@@ -20,6 +20,8 @@ The Tree Exporter extension allows you to:
 
 Alternatively, you can right-click on a folder in the VS Code explorer and select "Export Tree" from the context menu.
 
+[License](LICENSE.md)
+
 ## Requirements
 
 There are no specific requirements or dependencies for this extension.
