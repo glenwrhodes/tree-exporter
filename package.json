@@ -1,7 +1,7 @@
 {
   "name": "tree-exporter",
   "displayName": "Tree Exporter",
-  "description": "Export directory structure as text.",
+  "description": "Export directory structure as text. Simply right click on a folder, or click the 'Tree Exporter: Export' command in the command palette, or click outside a folder in the file explorer to export the entire workspace.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.77.0"
@@ -9,15 +9,29 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": ["*"],
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "tree-exporter.helloWorld",
-        "title": "Hello World"
+        "command": "extension.exportTree",
+        "title": "Tree Exporter: Export"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+          {
+              "command": "extension.exportTree",
+              "group": "navigation"
+          }
+      ],
+      "editor/context": [
+          {
+              "command": "extension.exportTree",
+              "group": "navigation"
+          }
+      ]
+  }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
