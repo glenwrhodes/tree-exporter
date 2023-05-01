@@ -2,7 +2,7 @@
   "name": "tree-exporter",
   "displayName": "Tree Exporter",
   "description": "Export directory structure as text. Simply right click on a folder, or click the 'Tree Exporter: Export' command in the command palette, or click outside a folder in the file explorer to export the entire workspace.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "TinyMooshGamesInc",
   "engines": {
     "vscode": "^1.63.0"
