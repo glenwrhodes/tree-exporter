@@ -23,6 +23,14 @@
       {
         "command": "extension.exportTree",
         "title": "Tree Exporter: Export"
+      },
+      {
+        "command": "extension.excludeFromTreeExport",
+        "title": "Exclude from tree export"
+      },
+      {
+        "command": "extension.includeInTreeExport",
+        "title": "Include in tree export"
       }
     ],
     "menus": {
@@ -30,6 +38,14 @@
           {
               "command": "extension.exportTree",
               "group": "navigation"
+          },
+          {
+            "command": "extension.excludeFromTreeExport",
+            "group": "navigation"
+          },
+          {
+            "command": "extension.includeInTreeExport",
+            "group": "navigation"
           }
       ],
       "editor/context": [
